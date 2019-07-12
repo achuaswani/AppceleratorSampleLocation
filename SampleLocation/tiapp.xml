@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <id>com.ust.location</id>
+  <name>SampleLocation</name>
+  <version>1.0</version>
+  <publisher>not specified</publisher>
+  <url>unspecified</url>
+  <description/>
+  <copyright>not specified</copyright>
+  <icon>appicon.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>true</analytics>
+  <guid>93d6ce7d-f68c-423f-9bbb-360aea9205c8</guid>
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <property name="run-on-main-thread" type="bool">true</property>
+  <ios>
+    <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+    <use-app-thinning>true</use-app-thinning>
+    <plist>
+      <dict>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <string>UIInterfaceOrientationPortraitUpsideDown</string>
+          <string>UIInterfaceOrientationLandscapeLeft</string>
+          <string>UIInterfaceOrientationLandscapeRight</string>
+        </array>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIStatusBarHidden</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleDefault</string>
+      </dict>
+    </plist>
+  </ios>
+  <android 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest 
+      xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1">
+      <uses-feature android:name="android.hardware.location.gps" />
+       <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    </manifest>
+  </android>
+  <modules></modules>
+  <deployment-targets>
+    <target device="android">true</target>
+    <target device="ipad">true</target>
+    <target device="iphone">true</target>
+  </deployment-targets>
+  <sdk-version>7.5.0.GA</sdk-version>
+  <plugins>
+    <plugin version="1.0">ti.alloy</plugin>
+  </plugins>
+  <property name="appc-app-id" type="string">5d28a083ee079e474523e583</property>
+</ti:app>
